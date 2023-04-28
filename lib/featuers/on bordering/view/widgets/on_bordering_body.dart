@@ -45,15 +45,15 @@ class _OnBorderingBodyState extends State<OnBorderingBody> {
             controller: pagecontroller,
             children: const [
               ItemPageView(
-                  image: "assets/images/on bordering/on bordering (1).png",
+                  image: "assets/images/on bordering/onb1",
                   title: "E Shopping",
                   subTitle: "Explore  top organic fruits & grab them"),
               ItemPageView(
-                  image: "assets/images/on bordering/on bordering (2).png",
+                  image: "assets/images/on bordering/onb2",
                   title: "Delivery on the way",
                   subTitle: "Get your order by speed delivery"),
               ItemPageView(
-                  image: "assets/images/on bordering/on bordering (3).png",
+                  image: "assets/images/on bordering/onb3",
                   title: "Delivery Arrived",
                   subTitle: "Order is arrived at your Place"),
             ],

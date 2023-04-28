@@ -37,26 +37,28 @@ class _SplashBodyState extends State<SplashBody>
 
   @override
   Widget build(BuildContext context) {
-    return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      const Spacer(),
-      FadeTransition(
-        opacity: fAnimation!,
-        child: const Text(
-          "Fruit Market",
-          style: TextStyle(
-              fontSize: 51,
-              fontFamily: "Poppins",
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontStyle: FontStyle.normal),
-        ),
-      ),
-      Image.asset("assets/images/splash/splash_2x.png"),
-    ]);
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          FadeTransition(
+            opacity: fAnimation!,
+            child: const Center(
+                child: Text(
+              "RIDERS JO",
+              style: TextStyle(
+                  fontSize: 51,
+                  fontFamily: "Poppins",
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.normal),
+            )),
+          ),
+        ]);
   }
 
   void getNextView() {
     Future.delayed(
-        const Duration(seconds: 3), () => Get.to(const OnBorderingView()));
+        const Duration(seconds: 5), () => Get.to(const OnBorderingView()));
   }
 }
