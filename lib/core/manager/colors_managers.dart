@@ -1,5 +1,6 @@
+import 'package:flutter/Material.dart';
 import 'package:flutter/animation.dart';
 
 abstract class ColorManager {
-  static const Color kColorPrimaryGreen = Color(0xff69A03A);
+  static const Color kColorPrimaryGreen = Colors.lightGreen;
 }
