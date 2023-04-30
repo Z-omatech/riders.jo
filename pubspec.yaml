@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.2.1
   fancy_bottom_navigation: ^0.3.2
+  image_picker: ^0.8.4+2
 
 
 
