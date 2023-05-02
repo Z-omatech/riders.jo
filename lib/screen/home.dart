@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:riders_jo/custom/bottomNavigationBar.dart';
 import 'package:riders_jo/screen/details.dart';
 
 import '../List/list_categories.dart';
@@ -17,41 +18,12 @@ class _HomeState extends State<Home> {
     'assets/image/b1.png',
     'assets/image/b1.png',
   ];
-  void _onItemTapped(int index) {
-    setState(() {
-      selectedIndex = index;
-    });
-  }
 
-  int selectedIndex = 0;
   //New
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        selectedFontSize: 10,
-        selectedIconTheme: IconThemeData(color: Colors.black, size: 40),
-        selectedItemColor: Colors.black,
-        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
-        currentIndex: selectedIndex, //New
-        onTap: _onItemTapped, //New
-
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.event),
-            label: 'events',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'notifications',
-          ),
-        ],
-      ),
+      bottomNavigationBar: navbar(),
       body: Padding(
         padding:
             const EdgeInsets.only(right: 10, left: 10, top: 25, bottom: 10),
@@ -59,14 +31,14 @@ class _HomeState extends State<Home> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Omatech",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold)),
-              const SizedBox(
-                height: 20,
-              ),
+              Container(
+                  height: 50,
+                  width: 100,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                    image: AssetImage("assets/image/ronax.png"),
+                    fit: BoxFit.fill,
+                  ))),
               Container(
                 height: 100,
                 width: double.infinity,
@@ -155,7 +127,8 @@ class _HomeState extends State<Home> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Details()),
+                                      builder: (context) => Details(
+                                          list_categories.elementAt(index))),
                                 );
                               },
                               child: Padding(

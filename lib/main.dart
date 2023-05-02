@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riders_jo/screen/details.dart';
-import 'package:riders_jo/screen/home.dart';
+
 import 'package:riders_jo/screen/welcome.dart';
 
 void main() {

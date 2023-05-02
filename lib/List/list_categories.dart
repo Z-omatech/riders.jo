@@ -14,6 +14,10 @@ class List_categories {
 // ignore: non_constant_identifier_names
 List<List_categories> list_categories = [
   List_categories(
+    "assets/image/Motorcycle accessories.jpg",
+    "accessories",
+  ),
+  List_categories(
     "assets/image/tires.jpg",
     "Tires",
   ),
