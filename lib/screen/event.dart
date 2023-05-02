@@ -7,8 +7,8 @@ class Event extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: navbar(),
+    return const Scaffold(
+      bottomNavigationBar: Navbar(),
     );
   }
 }

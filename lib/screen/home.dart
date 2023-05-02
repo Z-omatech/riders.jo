@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:riders_jo/custom/bottomNavigationBar.dart';
 import 'package:riders_jo/screen/details.dart';
@@ -5,7 +6,7 @@ import 'package:riders_jo/screen/details.dart';
 import '../List/list_categories.dart';
 
 class Home extends StatefulWidget {
-  Home({Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
@@ -22,7 +23,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: navbar(),
+      bottomNavigationBar: const Navbar(),
       body: Padding(
         padding:
             const EdgeInsets.only(right: 10, left: 10, top: 25, bottom: 10),
@@ -80,7 +81,7 @@ class _HomeState extends State<Home> {
               const SizedBox(
                 height: 10,
               ),
-              Container(
+              SizedBox(
                 height: 200,
                 child: CarouselSlider(
                   options: CarouselOptions(
@@ -112,7 +113,7 @@ class _HomeState extends State<Home> {
               const SizedBox(
                 height: 10,
               ),
-              Container(
+              SizedBox(
                 height: 200,
                 child: Column(
                   children: [
@@ -142,7 +143,7 @@ class _HomeState extends State<Home> {
                                     children: [
                                       Text(
                                           list_categories.elementAt(index).name,
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: Colors.black,
                                               fontSize: 15,
                                               fontWeight: FontWeight.bold)),

@@ -1,11 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:riders_jo/screen/welcome.dart';
 
 import '../../../../../core/widgets/button.dart';
 import '../../../../core/manager/colors_managers.dart';
 import '../../../../core/manager/size.dart';
-import '../../../login_page.dart';
 import 'item_page_view.dart';
 
 class OnBorderingBody extends StatefulWidget {
@@ -104,7 +104,7 @@ class _OnBorderingBodyState extends State<OnBorderingBody> {
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeIn);
                   } else {
-                    Get.to(() => const LoginView(),
+                    Get.to(() => const Welcome(),
                         transition: Transition.leftToRight);
                   }
                 }),

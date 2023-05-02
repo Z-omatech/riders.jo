@@ -3,15 +3,15 @@ import 'package:riders_jo/screen/accont.dart';
 import 'package:riders_jo/screen/event.dart';
 import 'package:riders_jo/screen/home.dart';
 
-class navbar extends StatefulWidget {
-  navbar({Key? key}) : super(key: key);
+class Navbar extends StatefulWidget {
+  const Navbar({Key? key}) : super(key: key);
 
   @override
-  State<navbar> createState() => _navbarState();
+  State<Navbar> createState() => _NavbarState();
 }
 
-class _navbarState extends State<navbar> {
-  final List<Widget> screens = [Home(), Event(), Accont()];
+class _NavbarState extends State<Navbar> {
+  final List<Widget> screens = [const Home(), const Event(), const Accont()];
   int currentPageIndex = 0;
 
   @override

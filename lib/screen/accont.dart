@@ -7,7 +7,7 @@ class Accont extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: navbar(),
+      bottomNavigationBar: const Navbar(),
       body: Align(
         alignment: const AlignmentDirectional(-0.2, -0.1),
         child: SingleChildScrollView(
@@ -63,8 +63,8 @@ class Accont extends StatelessWidget {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.shopping_bag_rounded,
@@ -72,7 +72,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'My Orders',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),
@@ -90,8 +90,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.favorite,
@@ -99,7 +99,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'Favourites',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),
@@ -117,8 +117,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.settings_outlined,
@@ -126,7 +126,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Padding(
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
                       child: Text(
                         'Settings',
@@ -148,8 +148,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.shopping_cart_sharp,
@@ -157,7 +157,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'My Cart',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),
@@ -175,8 +175,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.rate_review,
@@ -184,7 +184,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'Rate us',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),
@@ -202,8 +202,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.share_sharp,
@@ -211,7 +211,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'Refer a Friend',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),
@@ -229,8 +229,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.help_rounded,
@@ -238,7 +238,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'Help ',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),
@@ -256,8 +256,8 @@ class Accont extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Padding(
+                  children: const [
+                    Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                       child: Icon(
                         Icons.login,
@@ -265,7 +265,7 @@ class Accont extends StatelessWidget {
                         size: 24,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'Log Out',
                       style: TextStyle(color: Color.fromARGB(255, 70, 104, 19)),
                     ),

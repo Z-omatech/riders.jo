@@ -38,7 +38,7 @@ class _DetailsState extends State<Details> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: navbar(),
+      bottomNavigationBar: const Navbar(),
       appBar: AppBar(
         title: Text(widget.list.name),
         backgroundColor: const Color.fromARGB(255, 70, 104, 19),
@@ -54,7 +54,7 @@ class _DetailsState extends State<Details> {
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.bold)),
-              Text(widget.list.name + "?",
+              Text("${widget.list.name}?",
                   style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
@@ -158,7 +158,7 @@ class _DetailsState extends State<Details> {
                         child: const Text(
                           'Cancel',
                           style: TextStyle(
-                            color: const Color.fromARGB(255, 70, 104, 19),
+                            color: Color.fromARGB(255, 70, 104, 19),
                           ),
                         ),
                       ),
@@ -174,13 +174,13 @@ class _DetailsState extends State<Details> {
                           child: const Text(
                             'done',
                             style: TextStyle(
-                                color: const Color.fromARGB(255, 70, 104, 19)),
+                                color: Color.fromARGB(255, 70, 104, 19)),
                           ))
                     ],
                   ),
                 ),
                 child: const Text('Sale',
-                    style: const TextStyle(
+                    style: TextStyle(
                         color: Colors.lightGreen,
                         fontSize: 18,
                         fontWeight: FontWeight.bold)),
@@ -215,7 +215,7 @@ class _DetailsState extends State<Details> {
                           const SizedBox(
                             width: 7,
                           ),
-                          Container(
+                          SizedBox(
                             width: 200,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -249,7 +249,8 @@ class _DetailsState extends State<Details> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => HomePageWidget()));
+                                      builder: (context) =>
+                                          const HomePageWidget()));
                             },
                             iconSize: 25,
                             icon: const Icon(Icons.arrow_forward_ios),

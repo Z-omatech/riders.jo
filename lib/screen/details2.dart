@@ -23,7 +23,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           backgroundColor: const Color.fromARGB(255, 70, 104, 19),
           centerTitle: true,
         ),
-        bottomNavigationBar: navbar(),
+        bottomNavigationBar: const Navbar(),
         body: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -52,28 +52,28 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 'Grapes will provide natural nutrients. The  Chemical \nin organic grapes which can be healthier hair and \nskin. It can be improve Your heart health. Protect your\nbody from Cancer.',
               ),
             ),
-            Text("name",
+            const Text("name",
                 style: TextStyle(
                   color: Color(0xff393939),
                   fontSize: 25,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
-            Text("price",
+            const Text("price",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 25,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
-            Text("phone",
+            const Text("phone",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 25,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Center(
@@ -85,7 +85,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     color: const Color.fromARGB(255, 70, 104, 19)),
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Visa Payment",
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold),

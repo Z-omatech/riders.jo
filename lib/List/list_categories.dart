@@ -1,6 +1,3 @@
-// ignore: file_names
-// ignore_for_file: camel_case_types, file_names
-
 class List_categories {
   final String image;
   final String name;
