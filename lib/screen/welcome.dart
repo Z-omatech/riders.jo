@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riders_jo/screen/home.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -43,7 +44,12 @@ class Welcome extends StatelessWidget {
                 style: TextButton.styleFrom(
                     fixedSize: const Size(250, 40),
                     backgroundColor: Colors.white),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Home()),
+                  );
+                },
                 child: Row(
                   children: [
                     Container(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'featuers/splash/views/splash_view.dart';
+
+import 'package:riders_jo/screen/welcome.dart';
 
 void main() {
   runApp(const RidersJO());
@@ -11,10 +11,14 @@ class RidersJO extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      theme: ThemeData(fontFamily: 'Poppins'),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Welcome(),
       debugShowCheckedModeBanner: false,
-      home: const SplashView(),
+      //  home: const SplashView(),
     );
   }
 }
