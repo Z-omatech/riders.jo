@@ -6,6 +6,7 @@ import 'package:riders_jo/screen/welcome.dart';
 import '../../../../../core/widgets/button.dart';
 import '../../../../core/manager/colors_managers.dart';
 import '../../../../core/manager/size.dart';
+import '../../../../screen/home.dart';
 import 'item_page_view.dart';
 
 class OnBorderingBody extends StatefulWidget {
@@ -104,7 +105,7 @@ class _OnBorderingBodyState extends State<OnBorderingBody> {
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeIn);
                   } else {
-                    Get.to(() => const Welcome(),
+                    Get.to(() => const Home(),
                         transition: Transition.leftToRight);
                   }
                 }),

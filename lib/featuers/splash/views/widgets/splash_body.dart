@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:riders_jo/screen/welcome.dart';
 
 import '../../../on bordering/view/onbordering_view.dart';
 

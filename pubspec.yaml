@@ -29,16 +29,13 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
   dots_indicator: ^2.1.0
+  fancy_bottom_navigation: ^0.3.2
   flutter:
     sdk: flutter
   get: ^4.6.5
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  carousel_slider: ^4.2.1
-  fancy_bottom_navigation: ^0.3.2
   image_picker: ^0.8.4+2
 
 dev_dependencies:
